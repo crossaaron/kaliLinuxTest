@@ -1,0 +1,15 @@
+Package Management Tools  (similar to NPM!) 
+Debian uses apt
+
+apt-cache search - search for package
+apt-cache show - show info about package
+apt-get install - install package 
+	-y - auto answer yes
+apt-get remove - Remove package (but leave configs)
+apt-get purge - Remove package and configs
+
+dpkg -l - find versions of installed applications
+dpkg -i package.deb - install package
+dpkg -r package.deb - remove package
+
+

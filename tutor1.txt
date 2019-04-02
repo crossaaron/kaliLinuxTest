@@ -16,3 +16,26 @@ head -[n] - Default displays first 10 lines of a file
 tail -[n] - Default displays the last 10 lines of a file
 	tail -f - follow the end of a changing file
 
+
+LS options
+-l long listing
+-a list hidden files
+-r list in reverse name
+-t list new files first
+-rt list in reverse time
+
+.bash_history -> retains last 500 commands 
+shft/fn up/down arrows ->  page up/page dn
+
+cp [files(s)] [destination] - copy 
+cp -r - copy recursively (for copying dirs!)
+cp -i - copy interactively (check for overwrite if file exists)
+cp /root/file . - copies file to current directory
+
+mv [source] [destination]
+mv -i - move interactively (will ask before overwriting)
+mv /root/file . - moves file to current diretory
+mv also RENAMES files
+
+
+ 

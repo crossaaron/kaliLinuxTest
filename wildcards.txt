@@ -1,0 +1,16 @@
+* - matches zero or all characters
+? - matches exactly one character
+[] - matches any of the characters enclosed in brackets
+\ - escape character
+
+
+
+
+
+
+
+
+
+
+
+

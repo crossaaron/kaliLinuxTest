@@ -1,3 +1,14 @@
 Kali/linux Pentesting 
 
+ctrl z - suspend (not kill) gives a number to the 'job'
+fg '#' brings back the job in the background
+ctrl h - history
+ctrl r (in history) find in history
+
+ctrl a - beginning of line
+ctrl k (at beginning of line) cut
+ctrly y - paste
+ctrl l - clear extra lines
+
+
 

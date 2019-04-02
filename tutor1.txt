@@ -10,5 +10,9 @@ ctrl k (at beginning of line) cut
 ctrly y - paste
 ctrl l - clear extra lines
 
-
+cat - concatenate and display files
+less - show file content
+head -[n] - Default displays first 10 lines of a file
+tail -[n] - Default displays the last 10 lines of a file
+	tail -f - follow the end of a changing file
 

@@ -1,0 +1,38 @@
+Networking commands 
+
+ifconfig -> gives your ip and network info locally
+
+nslookup -> DNS server info
+	-or-
+cat /etc/resolv.conf
+
+ip route -> gateway that packets are going through  
+
+traceroute 'website address' -> verify your gateway
+
+
+--NETSTAT--
+
+netstat -antp
+
+-a -all
+-n -show numerical address 
+-t -TCP
+-p -show the name of the program
+
+Start Apache web server 
+service apache2 start
+
+wget http://'address'  pull file from source.  
+ 
+
+
+
+
+
+
+
+
+
+
+

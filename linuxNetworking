@@ -10,6 +10,23 @@ ip route -> gateway that packets are going through
 
 traceroute 'website address' -> verify your gateway
 
+****************************************
+--Settin UP Virtual Box IP ports (allow internet and metasploit connection)--
+sudo vim /etc/network/interfaces
+
+#the loopback network interface
+auto lo
+iface lo inet loopback
+
+#the primary network interface 
+auto eth1
+iface eth1 inet dhcp
+
+#The secondary network interface
+auto eth0
+iface eth0 inet dhcp
+****************************************
+
 
 --NETSTAT--
 

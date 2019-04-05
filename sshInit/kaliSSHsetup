@@ -1,0 +1,29 @@
+--To Initialize and setup SSH (only need to do once)
+
+*** To login with root using SSH (not reccomended in the wild)  
+vim /etc/ssh/sshd_config
+	- remove comment # from Permit root login and change pwd to 'yes'
+	ex:  PermitRootLogin yes
+save
+
+
+#Takes you to the SSH keys folder
+cd /etc/ssh
+
+# Store old keys in a directory 
+mkdir default-keys
+
+mv ssh_host_* default-key/  (using wildcard to target all old ssh files)
+
+# Create NEW keys to be used 
+dpkg-reconfigure openssh-server
+
+**USE SCP to transfer file with SSH**
+
+scp user@server:/path/to/file /local/file/destination
+
+ex:
+scp root@192.168.56.106:/root/Documents/imHere  /Users/aaroncross/Desktop/code/kaliLinuxTest/sshInit
+
+
+

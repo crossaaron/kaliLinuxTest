@@ -1,0 +1,59 @@
+*** File Diretory Permissions ****
+
+-r-w-d-x--
+
+
+r -> READ
+     file - you can see content 
+     directory - allows listing of content
+
+w -> WRITE 
+     file - you can modify
+     directory - create, move/remove files in directory
+
+x -> EXECUTE 
+     file - you can run file or program
+     directory - allows access to files in directory
+
+** CATEGORIES **
+
+u - user (owner)
+g - group assigned to file or dir
+o - other
+a - all
+
+** Change Permissions operators **
+
++ - add permission
+- - remove permission
+= - make this the only permission
+
+*** CHMOD commands ** (change mode) 
+
+chmod ugoa +-= rwx filename - Syntax
+
+chmod u+x somefile - make somefile executable for owner
+
+chmod a+rw somefile - make somefile readable and writable by everyone
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

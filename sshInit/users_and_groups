@@ -1,0 +1,35 @@
+** USERS
+
+whoami - displays username
+
+w - shows who's logged on and what they are doing
+cat /etc/passwd - see list of users
+cat /etc/shadow - see encrypted passwords
+
+
+**GROUPS
+
+id - displays group of your username
+groups tom- same as above (different output)
+cat/etc/group - see a list of groups
+
+*** ADD USER 
+
+adduser tom - create new user tom with home dir
+useradd tom - create new user tom WITOUT home dir
+userdel tom - delete user tom
+deluser --remove-home tom - delete user tom and remove home directory
+
+su - switch user
+addgroup name
+usermod -g name oldname (Change oldname group)
+delgrou name - delete group name
+
+
+
+
+
+
+
+
+

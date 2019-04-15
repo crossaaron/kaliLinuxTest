@@ -1,0 +1,34 @@
+List Processes 
+
+ps - processes of current session
+ps -f -processes with full formatting
+ps -e -list all processes
+ps - u [username] -list processes of user
+ps -p [PID] - Display information PID
+
+ctrl c -stop process
+kill [PID] -stop process
+kill -9 [PID] -force stop process  (can cause damage)
+
+background/foregroud **
+
+command & -run command in background
+jobs -lists jobs running in background
+fg [n] -foreground job number [n]
+
+tmux -another way to back/foreground running processes
+CTRL+B then d - detach tmux (background)
+tmux list-sessions - list sessions
+tmux attach - attach session
+nohup command & - run command in background even if session is terminated
+
+
+
+
+
+
+
+
+
+
+

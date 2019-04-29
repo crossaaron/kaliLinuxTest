@@ -1,0 +1,30 @@
+Tool used for testing port openings (network mapper)
+
+
+docs @ nMap.com etc.  (open source)  built in to KaliLinux Distro
+
+*** commands *** 
+(can be acessed from nmap -h) 
+
+nmap -  basic command  ex: nmap [IP address] 
+
+--switches--
+
+-sA (ack scan) used to determine open ports on firewalls
+-sP (ping scan) find live hosts
+-sS (syn scan) only flag set no 3 way handshake
+-sX (xmas scan)  all flags set   -(lit up like a christmas tree) 
+-PT (tcp ping) ping scan using tcp instead of icmp
+
+-A (long version detail)
+-O (determines OS of scanned target) 
+
+
+
+
+
+
+
+
+
+

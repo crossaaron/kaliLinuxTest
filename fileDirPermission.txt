@@ -37,6 +37,13 @@ chmod u+x somefile - make somefile executable for owner
 chmod a+rw somefile - make somefile readable and writable by everyone
 
 
+*** SUDO ***  super User do
+sudo -l list programs root can run
+sudo nmap - run nmap as root
+
+/ETC/SUDOERS (soo-doooers)
+root = All=(all:all)
+
 
 
 

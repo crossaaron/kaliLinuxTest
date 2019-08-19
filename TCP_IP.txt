@@ -1,0 +1,125 @@
+TCP / IP 
+
+Protocol - standard used for communication
+
+OSI Model:	(all people seem to need data processing)
+
+	-7 layers of the model 
+
+		- Application  - network API’s  - GATEWAY
+		- Presentation  - Formatting
+		- Session - Synchronization
+		- Transport - Packets
+		- Network - Addressing/Routing - ROUTER
+		- Data Link - Data Frames - BRIDGE/SWITCH - add header and trailer to data packet
+		- Physical - Hardware - REPEATER
+
+TCP/IP Transmission Control Protocol/Internet Protocol
+	- can be used in local network structure
+	- based off of DARPA model
+
+DARPA model -> 4 layer
+	- Application.  —  App / Près / Sess/ 
+	- Transport — Trans
+	- Internet — Network
+	- Network Access — Data Link / Physical
+
+Transport Layer Protocols 
+	- TCP - Transmission Control Protocol 
+		- one to one
+		- connection - oriented -> connection must be established before information exchanged (3-way handshake)
+		- reliable communication
+
+	- UDP - User Datagram Protocol
+		- connectionless 
+		- URELIABLE COMMUNICATIONS -> no acknowledgment (i.e . Mail vs. certified mail (TCP) ) 
+
+Internet Layer Protocols 
+	- IP -> Internet Protocol
+		- addressing 
+		- routing
+
+	- ARP -> address resolution protocol
+		- resolves the IP address to hardware address 
+
+	- ICMP -> Internet Control Message Protocol
+		- diagnostic / error reporting
+
+	- IGMP -> Internet Group Management Protocol
+		-manages IP multicast group membership
+
+UNICAST / MULTICAST / BROADCAST / ANYCAST
+ 1-1 /  1- few / 1- many (one source / 1 to (one -many)
+
+
+*********************************************************************
+*********************************************************************
+
+IP address -> 32 bit address used to uniquely identify a computer on a network
+	- networkIDportion / HostID portion
+
+	IP address: 192.168.10.1
+	subnet Mask: 255.255.255.0  -> 255’s determine Nework ID / 0’s determine Host ID
+	
+	- for every IP address there is a complimentary subnet mask to define the structure
+
+Ping - packet internet groper
+
+Rules for IP Addressing - 
+	- address made up by octets. (8bits)
+		-192.168.10.101
+	- Each octet can only have a number from 0 to 255
+	- first octet can’t be 127. (Reserved for diagnostics). 
+		- 127.0.0.1 know as loopback (localhost) 
+	- host ID cannot be all 0’s or all 255’s
+		- 0 reserved for network ID
+		- 255 reserved for Broadcast
+
+Classfull IP Addressing:  
+	- A Class : 1-126	255.0.0.0
+	-B Class : 128 -191	255.255.0.0
+	-C Class: 192-223 255.255.255.0
+
+	-D Class: 224-239 multicast
+	-E Class: 240-243 Experimental
+
+Private vs. Public IP addressing
+
+	PRIVATE
+		A Class: 10.0.0.0 - 10.255.255.255
+		B Class: 172.16.0.0 - 172.31.255.255
+		C Class: 192.168.0.0 - 192.168.255.255
+
+		- hosts assigned private IP address can get to Internet through Network Address Translation
+		
+NAT
+	- use of Nat server to connect private servers to internet.  Uses 2 diff network cards to accomplish
+		- 1 for internal coms,  1 for external coms 
+		- NAT server does communicating with outside and returns it to inside network
+
+*********************************************************************
+*********************************************************************
+
+
+Router
+	- forwards data packets along a network
+	- networks can only communicate with other networks through routers	
+VPN 
+	- virtual private network
+
+Default Gateway
+	- represents the IP address of a ROUTER that a computer uses to communicate outside of its network
+	- must be on same network of as computers it is connecting out 
+
+Subnetting
+	-> process of taking a large network and dividing It into smaller networks to increase efficiency and  manageability
+	
+	network 		172.16.0.0 {65534 Hosts}
+	subnet 		255.255.0.0
+
+	subnet1		172.16.1.0 {254 hosts}
+	subnet2		172.16.2.0 {254 hosts}
+	subnet3 		172.16.3.0 {254 hosts}
+	subnet MASK 	255.255.255.0   
+	
+	**main role of IT admin is to organized network structure to break up into smaller manageable chunks
